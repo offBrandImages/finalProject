@@ -22,9 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.picBallMain = New System.Windows.Forms.PictureBox()
         Me.picPaddle2 = New System.Windows.Forms.PictureBox()
         Me.picPaddle1 = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picBallMain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -33,7 +35,7 @@ Partial Class Form1
         'picBallMain
         '
         Me.picBallMain.Image = Global.pong.My.Resources.Resources.ball
-        Me.picBallMain.Location = New System.Drawing.Point(372, 176)
+        Me.picBallMain.Location = New System.Drawing.Point(65, 175)
         Me.picBallMain.Name = "picBallMain"
         Me.picBallMain.Size = New System.Drawing.Size(24, 24)
         Me.picBallMain.TabIndex = 2
@@ -57,6 +59,11 @@ Partial Class Form1
         Me.picPaddle1.TabIndex = 0
         Me.picPaddle1.TabStop = False
         '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 35
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -77,5 +84,6 @@ Partial Class Form1
     Friend WithEvents picPaddle1 As System.Windows.Forms.PictureBox
     Friend WithEvents picPaddle2 As System.Windows.Forms.PictureBox
     Friend WithEvents picBallMain As System.Windows.Forms.PictureBox
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
