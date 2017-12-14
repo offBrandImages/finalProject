@@ -22,3 +22,4 @@ C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\bin\
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.Form1.resources
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.Resources.resources
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.vbproj.GenerateResource.Cache
+C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.vbprojResolveAssemblyReference.cache
