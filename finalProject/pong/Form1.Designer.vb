@@ -23,14 +23,34 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.picBallMain = New System.Windows.Forms.PictureBox()
         Me.picPaddle2 = New System.Windows.Forms.PictureBox()
         Me.picPaddle1 = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblScorePlayer1 = New System.Windows.Forms.Label()
+        Me.lblScorePlayer2 = New System.Windows.Forms.Label()
         CType(Me.picBallMain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 25
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.ForeColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(0, 21)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(886, 13)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'picBallMain
         '
@@ -44,7 +64,7 @@ Partial Class Form1
         'picPaddle2
         '
         Me.picPaddle2.Image = Global.pong.My.Resources.Resources.Paddle
-        Me.picPaddle2.Location = New System.Drawing.Point(862, 12)
+        Me.picPaddle2.Location = New System.Drawing.Point(862, 35)
         Me.picPaddle2.Name = "picPaddle2"
         Me.picPaddle2.Size = New System.Drawing.Size(10, 50)
         Me.picPaddle2.TabIndex = 1
@@ -53,23 +73,41 @@ Partial Class Form1
         'picPaddle1
         '
         Me.picPaddle1.Image = Global.pong.My.Resources.Resources.Paddle
-        Me.picPaddle1.Location = New System.Drawing.Point(12, 12)
+        Me.picPaddle1.Location = New System.Drawing.Point(12, 35)
         Me.picPaddle1.Name = "picPaddle1"
         Me.picPaddle1.Size = New System.Drawing.Size(10, 50)
         Me.picPaddle1.TabIndex = 0
         Me.picPaddle1.TabStop = False
         '
-        'Timer1
+        'lblScorePlayer1
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 35
+        Me.lblScorePlayer1.AutoSize = True
+        Me.lblScorePlayer1.ForeColor = System.Drawing.Color.White
+        Me.lblScorePlayer1.Location = New System.Drawing.Point(12, 5)
+        Me.lblScorePlayer1.Name = "lblScorePlayer1"
+        Me.lblScorePlayer1.Size = New System.Drawing.Size(88, 13)
+        Me.lblScorePlayer1.TabIndex = 4
+        Me.lblScorePlayer1.Text = "Player 1 Score: 0"
+        '
+        'lblScorePlayer2
+        '
+        Me.lblScorePlayer2.AutoSize = True
+        Me.lblScorePlayer2.ForeColor = System.Drawing.Color.White
+        Me.lblScorePlayer2.Location = New System.Drawing.Point(784, 5)
+        Me.lblScorePlayer2.Name = "lblScorePlayer2"
+        Me.lblScorePlayer2.Size = New System.Drawing.Size(88, 13)
+        Me.lblScorePlayer2.TabIndex = 5
+        Me.lblScorePlayer2.Text = "Player 2 Score: 0"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(884, 412)
+        Me.Controls.Add(Me.lblScorePlayer2)
+        Me.Controls.Add(Me.lblScorePlayer1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picBallMain)
         Me.Controls.Add(Me.picPaddle2)
         Me.Controls.Add(Me.picPaddle1)
@@ -79,11 +117,15 @@ Partial Class Form1
         CType(Me.picPaddle2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPaddle1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents picPaddle1 As System.Windows.Forms.PictureBox
     Friend WithEvents picPaddle2 As System.Windows.Forms.PictureBox
     Friend WithEvents picBallMain As System.Windows.Forms.PictureBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblScorePlayer1 As System.Windows.Forms.Label
+    Friend WithEvents lblScorePlayer2 As System.Windows.Forms.Label
 
 End Class
