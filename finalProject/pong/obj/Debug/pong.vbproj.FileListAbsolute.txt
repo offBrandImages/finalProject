@@ -26,3 +26,10 @@ C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\bin\Debug
 C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.exe
 C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.xml
 C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.pdb
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\bin\Debug\pong.exe
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\bin\Debug\pong.pdb
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\bin\Debug\pong.xml
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.vbprojResolveAssemblyReference.cache
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.Form1.resources
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.Resources.resources
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\pong\obj\Debug\pong.vbproj.GenerateResource.Cache
