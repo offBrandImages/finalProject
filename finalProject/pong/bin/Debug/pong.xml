@@ -19,7 +19,39 @@ pong
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:pong.My.Resources.Resources.blueDim">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.blueLit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.greenDim">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.greenLit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:pong.My.Resources.Resources.Paddle">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.RedDim">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.redLit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.yellowDim">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pong.My.Resources.Resources.yellowLit">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

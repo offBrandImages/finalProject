@@ -118,10 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Paddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paddle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="redLit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redLit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellowDim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellowDim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blueLit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blueLit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blueDim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blueDim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="greenDim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greenDim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedDim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedDim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paddle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="greenLit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greenLit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellowLit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellowLit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

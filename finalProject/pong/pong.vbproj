@@ -92,6 +92,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="simonSays.Designer.vb">
+      <DependentUpon>simonSays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="simonSays.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="mainGame.resx">
@@ -102,6 +108,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simonSays.resx">
+      <DependentUpon>simonSays.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +130,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowLit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
