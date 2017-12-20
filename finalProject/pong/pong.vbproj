@@ -92,10 +92,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="simonSays.Designer.vb">
-      <DependentUpon>simonSays.vb</DependentUpon>
+    <Compile Include="randomNumber.Designer.vb">
+      <DependentUpon>randomNumber.vb</DependentUpon>
     </Compile>
-    <Compile Include="simonSays.vb">
+    <Compile Include="randomNumber.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -109,8 +109,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="simonSays.resx">
-      <DependentUpon>simonSays.vb</DependentUpon>
+    <EmbeddedResource Include="randomNumber.resx">
+      <DependentUpon>randomNumber.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

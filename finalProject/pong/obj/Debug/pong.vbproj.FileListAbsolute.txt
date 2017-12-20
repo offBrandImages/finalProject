@@ -23,4 +23,4 @@ C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.vbproj.GenerateResource.Cache
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.vbprojResolveAssemblyReference.cache
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.mainGame.resources
-C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.simonSays.resources
+C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.randomNumber.resources

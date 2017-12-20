@@ -57,7 +57,7 @@ Partial Class mainGame
         Me.picBallMain.Image = Global.pong.My.Resources.Resources.ball
         Me.picBallMain.Location = New System.Drawing.Point(65, 175)
         Me.picBallMain.Name = "picBallMain"
-        Me.picBallMain.Size = New System.Drawing.Size(24, 24)
+        Me.picBallMain.Size = New System.Drawing.Size(20, 20)
         Me.picBallMain.TabIndex = 2
         Me.picBallMain.TabStop = False
         '
