@@ -54,6 +54,7 @@ Partial Class Form1
         Me.btn8 = New System.Windows.Forms.Button()
         Me.btn7 = New System.Windows.Forms.Button()
         Me.btnMove = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.picX1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picO1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -406,11 +407,20 @@ Partial Class Form1
         Me.btnMove.Text = "Make Move"
         Me.btnMove.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(443, 210)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(0, 13)
+        Me.Label1.TabIndex = 32
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(599, 373)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pixX9)
@@ -468,6 +478,7 @@ Partial Class Form1
         CType(Me.picX8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picX7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -502,5 +513,6 @@ Partial Class Form1
     Friend WithEvents btn8 As System.Windows.Forms.Button
     Friend WithEvents btn7 As System.Windows.Forms.Button
     Friend WithEvents btnMove As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class

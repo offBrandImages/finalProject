@@ -8,6 +8,7 @@
     Dim blnSelect7 As Boolean = False
     Dim blnSelect8 As Boolean = False
     Dim blnSelect9 As Boolean = False
+    Dim intGameMoveCounter As Integer = 0
     Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
         blnSelect1 = True
         btn1.BackColor = Color.CadetBlue
@@ -126,6 +127,8 @@
     End Sub
 
     Private Sub btnMove_Click(sender As Object, e As EventArgs) Handles btnMove.Click
+        intGameMoveCounter += 1
+        Label1.Text = intGameMoveCounter.ToString()
         If blnSelect1 = True Then
             picO5.Visible = True
             picX1.Visible = True
@@ -133,26 +136,7 @@
                 picO3.Visible = True
                 picX2.Visible = True
                 If blnSelect7 = True Then
-                    picX7.Visible = True
-                    picO4.Visible = True
-                    If blnSelect9 = True Then
-                        picO6.Visible = True
-                        pixX9.Visible = True
-                        If blnSelect4 = True Then
-                            picX4.Visible = True
-                            picO7.Visible = True
-                        ElseIf blnSelect6 = True Then
-                            picX6.Visible = True
-                            picO7.Visible = True
-                        End If
-                    ElseIf blnSelect6 = True Then
-                        picX6.Visible = True
-                        picO9.Visible = True
-                        picX8.Visible = True
-                    ElseIf blnSelect8 = True Then
-                        picO6.Visible = True
-                        picX8.Visible = True
-                    End If
+
                 End If
             End If
         End If
