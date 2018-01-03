@@ -1,0 +1,20 @@
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\bin\Debug\Shooting Game.exe.config
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\bin\Debug\Shooting Game.exe
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\bin\Debug\Shooting Game.pdb
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\bin\Debug\Shooting Game.xml
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\obj\Debug\Shooting_Game.Form1.resources
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\obj\Debug\Shooting_Game.Resources.resources
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\obj\Debug\Shooting Game.vbproj.GenerateResource.Cache
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\obj\Debug\Shooting Game.exe
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\obj\Debug\Shooting Game.xml
+C:\Users\rc308750\AppData\Local\Temporary Projects\Shooting Game\obj\Debug\Shooting Game.pdb
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\bin\Debug\Shooting Game.exe.config
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\obj\Debug\Shooting Game.exe
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\obj\Debug\Shooting Game.xml
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\obj\Debug\Shooting Game.pdb
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\bin\Debug\Shooting Game.exe
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\bin\Debug\Shooting Game.pdb
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\bin\Debug\Shooting Game.xml
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\obj\Debug\Shooting_Game.Form1.resources
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\obj\Debug\Shooting_Game.Resources.resources
+C:\Users\rc308750\Downloads\VisualBasic\finalProject\finalProject\Shooting Game\Shooting Game\obj\Debug\Shooting Game.vbproj.GenerateResource.Cache
