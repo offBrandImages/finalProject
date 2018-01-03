@@ -12,7 +12,7 @@
                 guess = InputBox("Enter a number from 0 - 10")
                 If guess = secret Then
                     MessageBox.Show("You Win!")
-
+                    Stop
                 ElseIf guess < secret Then
                     MessageBox.Show("Your guess was too low")
                     lives -= 1
@@ -27,5 +27,9 @@
         Catch ex As Exception
             MessageBox.Show("Error")
         End Try
+    End Sub
+
+    Private Sub randomNumber_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
     End Sub
 End Class

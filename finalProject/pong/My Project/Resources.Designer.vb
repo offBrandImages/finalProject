@@ -121,6 +121,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property pongCollision() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("pongCollision", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property RedDim() As System.Drawing.Bitmap

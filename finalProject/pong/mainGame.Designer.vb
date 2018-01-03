@@ -26,11 +26,11 @@ Partial Class mainGame
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mainGame))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblLivesPlayer1 = New System.Windows.Forms.Label()
+        Me.lblScorePlayer1 = New System.Windows.Forms.Label()
         Me.picBallMain = New System.Windows.Forms.PictureBox()
         Me.picPaddle2 = New System.Windows.Forms.PictureBox()
         Me.picPaddle1 = New System.Windows.Forms.PictureBox()
-        Me.lblLivesPlayer1 = New System.Windows.Forms.Label()
-        Me.lblScorePlayer1 = New System.Windows.Forms.Label()
         CType(Me.picBallMain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +51,26 @@ Partial Class mainGame
         Me.Label1.Size = New System.Drawing.Size(886, 13)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = resources.GetString("Label1.Text")
+        '
+        'lblLivesPlayer1
+        '
+        Me.lblLivesPlayer1.AutoSize = True
+        Me.lblLivesPlayer1.ForeColor = System.Drawing.Color.White
+        Me.lblLivesPlayer1.Location = New System.Drawing.Point(106, 5)
+        Me.lblLivesPlayer1.Name = "lblLivesPlayer1"
+        Me.lblLivesPlayer1.Size = New System.Drawing.Size(88, 13)
+        Me.lblLivesPlayer1.TabIndex = 4
+        Me.lblLivesPlayer1.Text = "Player 1 Score: 0"
+        '
+        'lblScorePlayer1
+        '
+        Me.lblScorePlayer1.AutoSize = True
+        Me.lblScorePlayer1.ForeColor = System.Drawing.Color.White
+        Me.lblScorePlayer1.Location = New System.Drawing.Point(12, 5)
+        Me.lblScorePlayer1.Name = "lblScorePlayer1"
+        Me.lblScorePlayer1.Size = New System.Drawing.Size(85, 13)
+        Me.lblScorePlayer1.TabIndex = 5
+        Me.lblScorePlayer1.Text = "Player 1 Lives: 3"
         '
         'picBallMain
         '
@@ -78,26 +98,6 @@ Partial Class mainGame
         Me.picPaddle1.Size = New System.Drawing.Size(10, 50)
         Me.picPaddle1.TabIndex = 0
         Me.picPaddle1.TabStop = False
-        '
-        'lblLivesPlayer1
-        '
-        Me.lblLivesPlayer1.AutoSize = True
-        Me.lblLivesPlayer1.ForeColor = System.Drawing.Color.White
-        Me.lblLivesPlayer1.Location = New System.Drawing.Point(106, 5)
-        Me.lblLivesPlayer1.Name = "lblLivesPlayer1"
-        Me.lblLivesPlayer1.Size = New System.Drawing.Size(88, 13)
-        Me.lblLivesPlayer1.TabIndex = 4
-        Me.lblLivesPlayer1.Text = "Player 1 Score: 0"
-        '
-        'lblScorePlayer1
-        '
-        Me.lblScorePlayer1.AutoSize = True
-        Me.lblScorePlayer1.ForeColor = System.Drawing.Color.White
-        Me.lblScorePlayer1.Location = New System.Drawing.Point(12, 5)
-        Me.lblScorePlayer1.Name = "lblScorePlayer1"
-        Me.lblScorePlayer1.Size = New System.Drawing.Size(85, 13)
-        Me.lblScorePlayer1.TabIndex = 5
-        Me.lblScorePlayer1.Text = "Player 1 Lives: 3"
         '
         'mainGame
         '

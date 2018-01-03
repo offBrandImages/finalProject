@@ -57,6 +57,7 @@
         If picBallMain.Bounds.IntersectsWith(picPaddle2.Bounds) Then
             picBallMain.Location = New Point(picPaddle2.Location.X - picBallMain.Size.Width, _picBallMain.Location.Y)
             xSpeedOfBall = -xSpeedOfBall
+            My.Computer.Audio.Play(My.Resources.pongCollision, AudioPlayMode.Background)
         End If
 
         'Paddle 1 collision
@@ -64,6 +65,7 @@
             scorePlayer1 += 1
             picBallMain.Location = New Point(picPaddle1.Location.X + picBallMain.Size.Width + 1, _picBallMain.Location.Y)
             xSpeedOfBall = -xSpeedOfBall
+            My.Computer.Audio.Play(My.Resources.pongCollision, AudioPlayMode.Background)
         End If
 
         'Bottom wall collision
@@ -93,5 +95,9 @@
     Private Sub randomNumberMaker()
         xSpeedOfBall = CDbl(Rnd() * 10 + 10)
         ySpeedOfBall = CDbl(Rnd() * 7.5 + 1)
+    End Sub
+
+    Private Sub picPaddle1_Click(sender As Object, e As EventArgs) Handles picPaddle1.Click
+        lblLivesPlayer1.Text = "I'm done"
     End Sub
 End Class

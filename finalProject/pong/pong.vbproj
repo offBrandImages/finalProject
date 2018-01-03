@@ -105,9 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="randomNumber.resx">
       <DependentUpon>randomNumber.vb</DependentUpon>
@@ -154,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yellowLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongCollision.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

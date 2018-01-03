@@ -39,6 +39,10 @@ pong
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:pong.My.Resources.Resources.pongCollision">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
 </member><member name="P:pong.My.Resources.Resources.RedDim">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
