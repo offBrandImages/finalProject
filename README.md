@@ -25,4 +25,4 @@
       - Up and Downn Arrow to move up/down respectively
 
 ### Flowchart
-<img src="FinalProjectFlowchart.png">
+<img src="FinalProjectFlowchart.png alt="flowchart">
