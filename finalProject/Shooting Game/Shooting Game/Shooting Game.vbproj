@@ -119,6 +119,27 @@
   <ItemGroup>
     <None Include="Resources\leadbrook-clay-logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\513804_657ba.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5d00baeaaccf954ac275cc8de990a45.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animatedDuck.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1332726940807-dancing_duck.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flamingoanimation-8.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

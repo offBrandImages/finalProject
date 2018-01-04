@@ -15,7 +15,35 @@ ShootingGame
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources._1332726940807_dancing_duck">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources._513804_657ba">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources.animatedDuck">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources.e5d00baeaaccf954ac275cc8de990a45">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources.flamingoanimation_8">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources.giphy">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Shooting_Game.My.Resources.Resources.leadbrook_clay_logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Shooting_Game.My.Resources.Resources.source">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
