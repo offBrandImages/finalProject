@@ -23,3 +23,6 @@
       - W and S to move up/down respectively
     - Player two controls:
       - Up and Downn Arrow to move up/down respectively
+
+### Flowchart
+![FlowChart](Images/Final Project Flowchart.png?raw=true)
