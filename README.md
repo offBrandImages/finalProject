@@ -25,4 +25,4 @@
       - Up and Downn Arrow to move up/down respectively
 
 ### Flowchart
-[[https://github.com/offBrandImages/finalProject/tree/master/Images/octocat.png|alt=octocat]]
+<img src="images/Final Project Flowchart.png">
