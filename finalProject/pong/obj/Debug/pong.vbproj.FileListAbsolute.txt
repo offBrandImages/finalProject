@@ -19,7 +19,8 @@ C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\bin\Debug\pong.exe
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\bin\Debug\pong.pdb
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\bin\Debug\pong.xml
-C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.Form1.resources
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.Resources.resources
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.vbproj.GenerateResource.Cache
 C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.vbprojResolveAssemblyReference.cache
+C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.mainGame.resources
+C:\Users\db138992\Desktop\Git repositories\finalProjectVB\finalProject\pong\obj\Debug\pong.randomNumber.resources
