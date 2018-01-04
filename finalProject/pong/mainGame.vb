@@ -3,6 +3,7 @@
     Dim ySpeedOfBall As Double = 5.0
     Dim playerOneLives As Integer = 3
     Dim scorePlayer1 As Integer = 0
+    Dim scorePlayer2 As Integer = 0
     Dim running As Boolean = True
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
