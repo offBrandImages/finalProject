@@ -25,4 +25,4 @@
       - Up and Downn Arrow to move up/down respectively
 
 ### Flowchart
-<img src="FinalProjectFlowchart.png" alt="flowchart">
+![Flow Chart](FinalProjectFlowchart.png?raw=true "Flow Chart")
