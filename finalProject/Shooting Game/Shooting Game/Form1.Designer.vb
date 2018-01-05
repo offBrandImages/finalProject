@@ -23,35 +23,26 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.btnStart = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.picFlamOne = New System.Windows.Forms.PictureBox()
         Me.picEasy = New System.Windows.Forms.PictureBox()
         Me.picSmall3 = New System.Windows.Forms.PictureBox()
         Me.picSmall1 = New System.Windows.Forms.PictureBox()
         Me.picSmall2 = New System.Windows.Forms.PictureBox()
         Me.picMedium = New System.Windows.Forms.PictureBox()
+        Me.btnStart = New System.Windows.Forms.Button()
         Me.picMedium2 = New System.Windows.Forms.PictureBox()
-        CType(Me.picFlamOne, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picFlamOne = New System.Windows.Forms.PictureBox()
+        Me.lblScore = New System.Windows.Forms.Label()
         CType(Me.picEasy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picSmall3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picSmall1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picSmall2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMedium, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMedium2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picFlamOne, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnStart
-        '
-        Me.btnStart.Location = New System.Drawing.Point(335, 333)
-        Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(107, 44)
-        Me.btnStart.TabIndex = 0
-        Me.btnStart.Text = "Button1"
-        Me.btnStart.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -65,29 +56,10 @@ Partial Class Form1
         '
         Me.Timer3.Interval = 450
         '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Buxton Sketch", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(240, 249)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(291, 81)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Stage One"
-        '
-        'picFlamOne
-        '
-        Me.picFlamOne.Image = Global.Shooting_Game.My.Resources.Resources.flamingoanimation_8
-        Me.picFlamOne.Location = New System.Drawing.Point(552, 206)
-        Me.picFlamOne.Name = "picFlamOne"
-        Me.picFlamOne.Size = New System.Drawing.Size(128, 124)
-        Me.picFlamOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picFlamOne.TabIndex = 9
-        Me.picFlamOne.TabStop = False
-        '
         'picEasy
         '
         Me.picEasy.Image = Global.Shooting_Game.My.Resources.Resources.source
-        Me.picEasy.Location = New System.Drawing.Point(-2, 152)
+        Me.picEasy.Location = New System.Drawing.Point(-2, 170)
         Me.picEasy.Name = "picEasy"
         Me.picEasy.Size = New System.Drawing.Size(111, 106)
         Me.picEasy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -134,6 +106,19 @@ Partial Class Form1
         Me.picMedium.TabIndex = 2
         Me.picMedium.TabStop = False
         '
+        'btnStart
+        '
+        Me.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnStart.Font = New System.Drawing.Font("Buxton Sketch", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.ForeColor = System.Drawing.Color.Transparent
+        Me.btnStart.Image = Global.Shooting_Game.My.Resources.Resources.gold_wood_sign_clipart
+        Me.btnStart.Location = New System.Drawing.Point(248, 358)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(259, 82)
+        Me.btnStart.TabIndex = 0
+        Me.btnStart.Text = "Start Game"
+        Me.btnStart.UseVisualStyleBackColor = False
+        '
         'picMedium2
         '
         Me.picMedium2.Image = Global.Shooting_Game.My.Resources.Resources._513804_657ba
@@ -144,12 +129,32 @@ Partial Class Form1
         Me.picMedium2.TabIndex = 6
         Me.picMedium2.TabStop = False
         '
+        'picFlamOne
+        '
+        Me.picFlamOne.Image = Global.Shooting_Game.My.Resources.Resources.flamingoanimation_8
+        Me.picFlamOne.Location = New System.Drawing.Point(-2, 331)
+        Me.picFlamOne.Name = "picFlamOne"
+        Me.picFlamOne.Size = New System.Drawing.Size(128, 124)
+        Me.picFlamOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picFlamOne.TabIndex = 9
+        Me.picFlamOne.TabStop = False
+        '
+        'lblScore
+        '
+        Me.lblScore.AutoSize = True
+        Me.lblScore.Font = New System.Drawing.Font("Buxton Sketch", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.Location = New System.Drawing.Point(277, 138)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(0, 119)
+        Me.lblScore.TabIndex = 10
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(780, 414)
-        Me.Controls.Add(Me.Label1)
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.ClientSize = New System.Drawing.Size(780, 452)
+        Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.picEasy)
         Me.Controls.Add(Me.picSmall3)
         Me.Controls.Add(Me.picSmall1)
@@ -161,14 +166,15 @@ Partial Class Form1
         Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.picFlamOne, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picEasy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picSmall3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picSmall1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picSmall2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picMedium, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picMedium2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picFlamOne, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnStart As System.Windows.Forms.Button
@@ -181,7 +187,7 @@ Partial Class Form1
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Timer3 As System.Windows.Forms.Timer
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents picFlamOne As System.Windows.Forms.PictureBox
+    Friend WithEvents lblScore As System.Windows.Forms.Label
 
 End Class

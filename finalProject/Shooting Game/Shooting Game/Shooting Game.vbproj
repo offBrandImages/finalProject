@@ -140,6 +140,12 @@
   <ItemGroup>
     <None Include="Resources\flamingoanimation-8.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horsley-hills-head-143.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold-wood-sign-clipart.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
