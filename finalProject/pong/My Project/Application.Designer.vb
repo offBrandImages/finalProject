@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.pong.mainGame
+            Me.MainForm = Global.pong.mainMenu
         End Sub
     End Class
 End Namespace

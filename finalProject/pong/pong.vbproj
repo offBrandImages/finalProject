@@ -77,6 +77,12 @@
       <DependentUpon>mainGame.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mainMenu.Designer.vb">
+      <DependentUpon>mainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -102,6 +108,9 @@
   <ItemGroup>
     <EmbeddedResource Include="mainGame.resx">
       <DependentUpon>mainGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
