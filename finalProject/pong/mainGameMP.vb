@@ -1,7 +1,6 @@
-﻿Public Class mainGame
+﻿Public Class mainGameMP
     Dim xSpeedOfBall As Double = 10.5
     Dim ySpeedOfBall As Double = 5.0
-    Dim playerOneLives As Integer = 3
     Dim scorePlayer1 As Integer = 0
     Dim scorePlayer2 As Integer = 0
     Dim running As Boolean = True
@@ -26,31 +25,21 @@
         End If
     End Sub
 
-    'Private Sub paddle2Move(ByVal sender As System.Object, ByVal d As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
-    '    If d.KeyCode = Keys.Up Then
-    '        picPaddle2.Top -= 12
-    '        If picPaddle2.Top < 35 Then
-    '            picPaddle2.Top = 37
-    '        End If
-    '    ElseIf d.KeyCode = Keys.Down Then
-    '        picPaddle2.Top += 12
-    '        If picPaddle2.Top > 350 Then
-    '            picPaddle2.Top = 350
-    '        End If
-    '    End If
-    'End Sub
-
-    Private Sub Collison(sender As Object, e As EventArgs) Handles Timer1.Tick
-        'AI
-        picPaddle2.Location = New Point(862, picBallMain.Location.Y)
-
-        'Bounds for AI paddle
-        If picPaddle2.Top < 35 Then
-            picPaddle2.Top = 37
+    Private Sub paddle2move(ByVal sender As System.Object, ByVal d As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If d.keycode = keys.up Then
+            picpaddle2.top -= 12
+            If picpaddle2.top < 35 Then
+                picpaddle2.top = 37
+            End If
+        ElseIf d.keycode = keys.down Then
+            picpaddle2.top += 12
+            If picpaddle2.top > 350 Then
+                picpaddle2.top = 350
+            End If
         End If
-        If picPaddle2.Top > 350 Then
-            picPaddle2.Top = 350
-        End If
+    End Sub
+
+    Private Sub Collison(sender As Object, e As EventArgs) Handles mainGameTimer.Tick
         'Moves ball to new point by creating (X, Y) based on speed variable
         picBallMain.Location = New Point(picBallMain.Location.X + xSpeedOfBall, picBallMain.Location.Y + ySpeedOfBall)
 
@@ -63,7 +52,6 @@
 
         'Paddle 1 collision
         If picBallMain.Bounds.IntersectsWith(picPaddle1.Bounds) Then
-            scorePlayer1 += 1
             picBallMain.Location = New Point(picPaddle1.Location.X + picBallMain.Size.Width + 1, _picBallMain.Location.Y)
             xSpeedOfBall = -xSpeedOfBall
             My.Computer.Audio.Play(My.Resources.pongCollision, AudioPlayMode.Background)
@@ -83,11 +71,15 @@
 
         'Scoring
         If picBallMain.Location.X < 12 Then
-            playerOneLives -= 1
-            scorePlayer1 -= 3
+            scorePlayer2 += 1
             picBallMain.Location = New Point(65, 175)
-            lblScorePlayer1.Text = "Player 1 Lives: " & playerOneLives
-            lblLivesPlayer1.Text = "Player 1 Score: " & scorePlayer1
+            lblScorePlayer2.Text = "Player 2 Score: " & scorePlayer2
+            Threading.Thread.Sleep(500)
+            randomNumberMaker()
+        ElseIf picBallMain.Location.X > 865 Then
+            scorePlayer1 += 1
+            picBallMain.Location = New Point(65, 175)
+            lblScorePlayer1.Text = "Player 1 Score: " & scorePlayer1
             Threading.Thread.Sleep(500)
             randomNumberMaker()
         End If
@@ -99,6 +91,6 @@
     End Sub
 
     Private Sub picPaddle1_Click(sender As Object, e As EventArgs) Handles picPaddle1.Click
-        lblLivesPlayer1.Text = "I'm done"
+        lblScorePlayer1.Text = "I'm done"
     End Sub
 End Class

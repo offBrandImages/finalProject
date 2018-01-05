@@ -70,11 +70,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="mainGame.vb">
+    <Compile Include="mainGameMP.Designer.vb">
+      <DependentUpon>mainGameMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainGameMP.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainGame.Designer.vb">
-      <DependentUpon>mainGame.vb</DependentUpon>
+    <Compile Include="mainGameSP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainGameSP.Designer.vb">
+      <DependentUpon>mainGameSP.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainMenu.Designer.vb">
@@ -104,10 +110,19 @@
     <Compile Include="randomNumber.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="singleMutliPlayer.Designer.vb">
+      <DependentUpon>singleMutliPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="singleMutliPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="mainGame.resx">
-      <DependentUpon>mainGame.vb</DependentUpon>
+    <EmbeddedResource Include="mainGameMP.resx">
+      <DependentUpon>mainGameMP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainGameSP.resx">
+      <DependentUpon>mainGameSP.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainMenu.resx">
       <DependentUpon>mainMenu.vb</DependentUpon>
@@ -120,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="randomNumber.resx">
       <DependentUpon>randomNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleMutliPlayer.resx">
+      <DependentUpon>singleMutliPlayer.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
