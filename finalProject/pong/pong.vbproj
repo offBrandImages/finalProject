@@ -92,6 +92,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="randomNumber.Designer.vb">
+      <DependentUpon>randomNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="randomNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="mainGame.resx">
@@ -99,9 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="randomNumber.resx">
+      <DependentUpon>randomNumber.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +130,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueDim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowLit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pongCollision.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
