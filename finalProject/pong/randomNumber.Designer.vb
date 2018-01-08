@@ -41,6 +41,7 @@ Partial Class randomNumber
         Me.ClientSize = New System.Drawing.Size(116, 45)
         Me.Controls.Add(Me.btnStart)
         Me.Name = "randomNumber"
+        Me.ShowIcon = False
         Me.Text = "randomNumber"
         Me.ResumeLayout(False)
 

@@ -63,6 +63,7 @@ Partial Class singleMutliPlayer
         Me.Controls.Add(Me.btnMP)
         Me.Controls.Add(Me.btnSP)
         Me.Name = "singleMutliPlayer"
+        Me.ShowIcon = False
         Me.Text = "singleMutliPlayer"
         Me.ResumeLayout(False)
 

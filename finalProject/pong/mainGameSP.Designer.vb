@@ -112,6 +112,7 @@ Partial Class mainGameSP
         Me.Controls.Add(Me.picPaddle2)
         Me.Controls.Add(Me.picPaddle1)
         Me.Name = "mainGameSP"
+        Me.ShowIcon = False
         Me.Text = "Pong"
         CType(Me.picBallMain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPaddle2, System.ComponentModel.ISupportInitialize).EndInit()

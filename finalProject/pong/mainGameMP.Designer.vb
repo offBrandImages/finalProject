@@ -111,7 +111,9 @@ Partial Class mainGameMP
         Me.Controls.Add(Me.picBallMain)
         Me.Controls.Add(Me.picPaddle2)
         Me.Controls.Add(Me.picPaddle1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "mainGameMP"
+        Me.ShowIcon = False
         Me.Text = "mainGameMP"
         CType(Me.picBallMain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPaddle2, System.ComponentModel.ISupportInitialize).EndInit()

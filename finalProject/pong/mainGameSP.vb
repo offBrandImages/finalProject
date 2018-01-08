@@ -51,6 +51,7 @@
             scorePlayer1 += 1
             picBallMain.Location = New Point(picPaddle1.Location.X + picBallMain.Size.Width + 1, _picBallMain.Location.Y)
             xSpeedOfBall = -xSpeedOfBall
+            lblScorePlayer1.Text = "Player 1 Score: " & scorePlayer1
             My.Computer.Audio.Play(My.Resources.pongCollision, AudioPlayMode.Background)
         End If
 
@@ -80,11 +81,23 @@
         If playerOneLives = 0 Then
             mainGameTimer.Enabled = False
             MessageBox.Show("You Lost. Your score was " & scorePlayer1)
+            Dim result As Integer = MessageBox.Show("Would you like to play again?", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning)
+            If result = DialogResult.Cancel Then
+                'nothing
+            ElseIf result = DialogResult.No Then
+                Me.Close()
+            ElseIf result = DialogResult.Yes Then
+                scorePlayer1 = 0
+                picBallMain.Location = New Point(65, 175)
+                randomNumberMaker()
+                lblScorePlayer1.Text = "Player 1 Score: " & scorePlayer1
+                mainGameTimer.Enabled = True
+            End If
         End If
     End Sub
 
     Private Sub randomNumberMaker()
-        xSpeedOfBall = CDbl(Rnd() * 10 + 10)
+        xSpeedOfBall = CDbl(Rnd() * 10 + 5)
         ySpeedOfBall = CDbl(Rnd() * 7.5 + 1)
     End Sub
 

@@ -22,6 +22,7 @@ Partial Class mainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mainMenu))
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnCredits = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -60,7 +61,7 @@ Partial Class mainMenu
         'ListCredis
         '
         Me.ListCredis.FormattingEnabled = True
-        Me.ListCredis.Items.AddRange(New Object() {"Dusty Pong Flow Chart", "", "Rebecca Bird Shoot", "", "Andrew Main Menu"})
+        Me.ListCredis.Items.AddRange(New Object() {"Dusty: Pong, Flow Chart", "", "Rebecca: Bird Shoot", "", "Andrew: Main Menu"})
         Me.ListCredis.Location = New System.Drawing.Point(223, 84)
         Me.ListCredis.Name = "ListCredis"
         Me.ListCredis.Size = New System.Drawing.Size(120, 95)
@@ -98,8 +99,11 @@ Partial Class mainMenu
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCredits)
         Me.Controls.Add(Me.btnPlay)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "mainMenu"
+        Me.ShowIcon = False
         Me.Text = "mainMenu"
+        Me.TransparencyKey = System.Drawing.Color.White
         Me.ResumeLayout(False)
 
     End Sub
