@@ -128,7 +128,7 @@ Namespace My.Resources
                 Return ResourceManager.GetStream("pongCollision", resourceCulture)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>

@@ -27,7 +27,7 @@ Partial Class randomNumber
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(105, 227)
+        Me.btnStart.Location = New System.Drawing.Point(12, 12)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(75, 23)
         Me.btnStart.TabIndex = 0
@@ -38,9 +38,10 @@ Partial Class randomNumber
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(116, 45)
         Me.Controls.Add(Me.btnStart)
         Me.Name = "randomNumber"
+        Me.ShowIcon = False
         Me.Text = "randomNumber"
         Me.ResumeLayout(False)
 

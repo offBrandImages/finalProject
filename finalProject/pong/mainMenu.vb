@@ -16,8 +16,8 @@
         btnDuck.Visible = True
         btnNumber.Visible = True
         If btnPlay.Text = "Pong" Then
-            Dim frmPong As New mainGame
-            frmPong.ShowDialog()
+            Dim frmDecide As New singleMutliPlayer
+            frmDecide.ShowDialog()
         End If
         btnPlay.Text = "Pong"
     End Sub
