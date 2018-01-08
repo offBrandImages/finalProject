@@ -78,10 +78,29 @@
             randomNumberMaker()
         ElseIf picBallMain.Location.X > 865 Then
             scorePlayer1 += 1
-            picBallMain.Location = New Point(65, 175)
+            picBallMain.Location = New Point(800, 175)
             lblScorePlayer1.Text = "Player 1 Score: " & scorePlayer1
             Threading.Thread.Sleep(500)
             randomNumberMaker()
+            xSpeedOfBall = -xSpeedOfBall
+        End If
+
+        If scorePlayer2 >= 8 Or scorePlayer1 >= 8 Then
+            mainGameTimer.Enabled = False
+            Dim result As Integer = MessageBox.Show("Would you like to play again?", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning)
+            If result = DialogResult.Cancel Then
+                'nothing
+            ElseIf result = DialogResult.No Then
+                Me.Close()
+            ElseIf result = DialogResult.Yes Then
+                scorePlayer1 = 0
+                scorePlayer2 = 0
+                picBallMain.Location = New Point(65, 175)
+                randomNumberMaker()
+                lblScorePlayer1.Text = "Player 1 Score: " & scorePlayer1
+                lblScorePlayer2.Text = "Player 2 Score: " & scorePlayer2
+                mainGameTimer.Enabled = True
+            End If
         End If
     End Sub
 

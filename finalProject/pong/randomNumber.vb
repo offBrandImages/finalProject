@@ -6,7 +6,6 @@
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         lives = 3
         secret = CInt(Rnd() * 10)
-        Console.WriteLine(secret)
         Try
             Do While lives > 0 Or guess = secret
                 guess = InputBox("Enter a number from 0 - 10")
@@ -25,7 +24,7 @@
                 End If
             Loop
         Catch ex As Exception
-            MessageBox.Show("Error")
+            MessageBox.Show("Please enter a number!")
         End Try
     End Sub
 
