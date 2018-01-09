@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Game
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -35,6 +35,9 @@ Partial Class Form1
         Me.picMedium2 = New System.Windows.Forms.PictureBox()
         Me.picFlamOne = New System.Windows.Forms.PictureBox()
         Me.lblScore = New System.Windows.Forms.Label()
+        Me.lblInstructions = New System.Windows.Forms.Label()
+        Me.lblTimer = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.picEasy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picSmall3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picSmall1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,7 +115,7 @@ Partial Class Form1
         Me.btnStart.Font = New System.Drawing.Font("Buxton Sketch", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStart.ForeColor = System.Drawing.Color.Transparent
         Me.btnStart.Image = Global.Shooting_Game.My.Resources.Resources.gold_wood_sign_clipart
-        Me.btnStart.Location = New System.Drawing.Point(248, 358)
+        Me.btnStart.Location = New System.Drawing.Point(252, 358)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(259, 82)
         Me.btnStart.TabIndex = 0
@@ -143,18 +146,53 @@ Partial Class Form1
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.Font = New System.Drawing.Font("Buxton Sketch", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(277, 138)
+        Me.lblScore.Location = New System.Drawing.Point(307, 104)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(0, 119)
         Me.lblScore.TabIndex = 10
+        Me.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Form1
+        'lblInstructions
+        '
+        Me.lblInstructions.AutoSize = True
+        Me.lblInstructions.Font = New System.Drawing.Font("Buxton Sketch", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInstructions.Location = New System.Drawing.Point(164, 28)
+        Me.lblInstructions.Name = "lblInstructions"
+        Me.lblInstructions.Size = New System.Drawing.Size(476, 104)
+        Me.lblInstructions.TabIndex = 11
+        Me.lblInstructions.Text = "Point and click to shoot a duck!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If you reach 24 points, you are a duck hunting " & _
+    "master!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Press Start Game to begin" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You will have 15 Seconds."
+        Me.lblInstructions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblTimer
+        '
+        Me.lblTimer.AutoSize = True
+        Me.lblTimer.Font = New System.Drawing.Font("Buxton Sketch", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTimer.Location = New System.Drawing.Point(394, 329)
+        Me.lblTimer.Name = "lblTimer"
+        Me.lblTimer.Size = New System.Drawing.Size(30, 26)
+        Me.lblTimer.TabIndex = 12
+        Me.lblTimer.Text = "15"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Buxton Sketch", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(322, 329)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(66, 26)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Timer:"
+        '
+        'Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ClientSize = New System.Drawing.Size(780, 452)
-        Me.Controls.Add(Me.lblScore)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblTimer)
+        Me.Controls.Add(Me.lblInstructions)
         Me.Controls.Add(Me.picEasy)
         Me.Controls.Add(Me.picSmall3)
         Me.Controls.Add(Me.picSmall1)
@@ -163,9 +201,10 @@ Partial Class Form1
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.picMedium2)
         Me.Controls.Add(Me.picFlamOne)
+        Me.Controls.Add(Me.lblScore)
         Me.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "Game"
+        Me.Text = "Shooting Spectacular Duck Hunt"
         CType(Me.picEasy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picSmall3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picSmall1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -189,5 +228,8 @@ Partial Class Form1
     Friend WithEvents Timer3 As System.Windows.Forms.Timer
     Friend WithEvents picFlamOne As System.Windows.Forms.PictureBox
     Friend WithEvents lblScore As System.Windows.Forms.Label
+    Friend WithEvents lblInstructions As System.Windows.Forms.Label
+    Friend WithEvents lblTimer As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
