@@ -26,3 +26,5 @@
 
 ### Flowchart
 ![Flow Chart](FinalProjectFlowchart.png "Flow Chart")
+
+### <a href = "https://www.youtube.com/watch?v=IXDEpMKyswk&feature=youtu.be">Video</a>
